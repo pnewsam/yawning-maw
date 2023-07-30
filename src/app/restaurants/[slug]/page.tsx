@@ -1,3 +1,7 @@
+import { RestaurantDetails } from "@/components/restaurantDetails/_main";
+import { RestaurantTransformer, mockRestaurant } from "@/models";
+
 export default function RestaurantDetailsPage() {
-  return <main className="CONTENT py-8">Restaurant Details Page</main>;
+  const r = RestaurantTransformer(mockRestaurant);
+  return <RestaurantDetails restaurant={r} />;
 }

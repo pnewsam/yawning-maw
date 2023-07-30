@@ -24,7 +24,7 @@ export const PhotoLinkButton = ({
 }: {
   href: string;
 } & Children) => (
-  <div className="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-stone-100 border border-stone-200 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-stone-100">
+  <div className="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-stone-100 border border-stone-200">
     <Link href={href}>
       <figure className="w-full h-auto">
         {children || (
