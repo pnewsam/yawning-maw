@@ -1,9 +1,7 @@
 import { AppLayout } from "@/components/AppLayout";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter, prompt } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={`${inter.className}, ${prompt.variable}`}>
+      <body>
         <AppLayout>{children}</AppLayout>
       </body>
     </html>

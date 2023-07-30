@@ -1,16 +1,24 @@
 "use client";
 
+import Link from "next/link";
+
 export const Navbar = () => {
   return (
-    <nav className="border-b border-gray-200 w-full py-4 px-8 flex items-center justify-between">
-      <div className="">
-        {/* Left Section */}
-        <span>Yawning Maw</span>
-      </div>
+    <nav className="border-b border-gray-200 w-full">
+      <div className="CONTENT py-4 flex items-center justify-between">
+        <div className="">
+          {/* Left Section */}
+          <Link href="/">
+            <span className="font-display text-stone-600 text-2xl">
+              Yawning Maw
+            </span>
+          </Link>
+        </div>
 
-      <div className="">
-        {/* Right Section */}
-        <span>Right</span>
+        <div className="">
+          {/* Right Section */}
+          <span>Right</span>
+        </div>
       </div>
     </nav>
   );
