@@ -48,7 +48,7 @@ export const AddImageBox = ({ className, restaurant }: Props) => {
             <DialogHeader>
               <DialogTitle>Submit a photo</DialogTitle>
             </DialogHeader>
-            <p className="text-stone-600 text-sm">
+            <p className="text-stone-700 text-sm">
               Submit a photo for{" "}
               <b className="text-stone-700">{restaurant.name}</b>. If we like
               it, we&apos;ll feature it on this page.

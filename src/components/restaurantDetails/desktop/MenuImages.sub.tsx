@@ -8,7 +8,7 @@ import {
 import interior from "@/assets/images/interior.jpg";
 
 export const MenuImage = () => (
-  <figure className="w-[240px] h-min">
+  <figure className="w-full max-w-[240px] h-min">
     <Image
       src={interior.src}
       className="rounded"
@@ -23,7 +23,7 @@ export const MenuImage = () => (
             Hot and Fiery Chicken
           </p>
           <Popover>
-            <PopoverTrigger>
+            <PopoverTrigger className="hidden lg:block">
               <Vegan className="w-4 h-4 ml-2 text-stone-400" />
             </PopoverTrigger>
             <PopoverContent className="max-w-min py-1 px-2 bg-stone-800">
@@ -31,7 +31,9 @@ export const MenuImage = () => (
             </PopoverContent>
           </Popover>
         </div>
-        <p className="text-sm text-stone-700 font-semibold">$18</p>
+        <p className="hidden lg:block text-sm text-stone-700 font-semibold">
+          $18
+        </p>
       </div>
       <p className="text-xs text-stone-500 leading-relaxed mt-1">
         Signature fried chicken wings with a sticky spicy peri peri sauce.

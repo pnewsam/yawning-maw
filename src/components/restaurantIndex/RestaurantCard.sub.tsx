@@ -5,7 +5,7 @@ type Children = {
 };
 
 export const Name = ({ children }: Children) => (
-  <p className="pointer-events-none mt-2 block truncate text-xl font-display font-semibold text-stone-600">
+  <p className="pointer-events-none mt-2 block truncate text-xl font-display font-semibold text-stone-700">
     {children}
   </p>
 );

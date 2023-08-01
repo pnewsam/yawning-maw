@@ -9,16 +9,13 @@ export const Navbar = () => {
         <div className="">
           {/* Left Section */}
           <Link href="/">
-            <span className="font-display text-stone-600 text-2xl">
+            <span className="font-display text-stone-700 text-2xl">
               Yawning Maw
             </span>
           </Link>
         </div>
 
-        <div className="">
-          {/* Right Section */}
-          <span>Right</span>
-        </div>
+        <div className="">{/* Right Section */}</div>
       </div>
     </nav>
   );
