@@ -18,6 +18,19 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui";
+import { cn } from "@/lib/utils";
+
+const Row = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => (
+  <div className={cn("flex items-start justify-between mb-2 gap-2", className)}>
+    {children}
+  </div>
+);
 
 export const Address = ({
   address,
@@ -26,8 +39,8 @@ export const Address = ({
   address: string;
   googleUrl: string;
 }) => (
-  <div className="flex items-start justify-between gap-2 mb-2">
-    <Map className="w-4 h-4 flex-shrink-0 mt-[8px]" />
+  <Row>
+    <Map className="w-4 h-4 flex-shrink-0 mt-3 text-stone-700" />
     <div className="inline-flex justify-end flex-col items-stretch">
       <TooltipProvider delayDuration={100}>
         <Tooltip>
@@ -37,7 +50,7 @@ export const Address = ({
               size="sm"
               className="inline-flex items-center gap-2 -mr-3 py-0"
             >
-              <span className="text-sm">{address}</span>
+              <span className="text-sm text-end">{address}</span>
               <Copy className="w-3 h-3" />
             </Button>
           </TooltipTrigger>
@@ -55,12 +68,12 @@ export const Address = ({
         <ExternalLink className="w-3 h-3" />
       </a>
     </div>
-  </div>
+  </Row>
 );
 
 export const Hours = () => (
-  <div className="flex items-start justify-between mb-2">
-    <Clock className="w-4 h-4 mt-2" />
+  <Row>
+    <Clock className="w-4 h-4 mt-3 text-stone-700" />
     <Collapsible className="inline-block">
       <CollapsibleTrigger className="flex items-center justify-end w-full">
         <Button variant="ghost" size="sm" className="py-1 pr-2 pl-2 -mr-2">
@@ -95,23 +108,23 @@ export const Hours = () => (
         </div>
       </CollapsibleContent>
     </Collapsible>
-  </div>
+  </Row>
 );
 
 export const Website = ({ url }: { url: string }) => (
-  <div className="flex items-center justify-between">
-    <Globe className="w-4 h-4" />
-    <a href={url} className="text-sm hover:underline">
+  <Row>
+    <Globe className="w-4 h-4 mt-[1px] text-stone-700" />
+    <a href={url} className="text-sm hover:underline max-w-[220px] truncate">
       {url}
     </a>
-  </div>
+  </Row>
 );
 
 export const PhoneNumber = ({ phoneNumber }: { phoneNumber: string }) => (
-  <div className="flex items-center justify-between mb-2">
-    <Phone className="w-4 h-4" />
+  <Row>
+    <Phone className="w-4 h-4 mt-[1px] text-stone-700" />
     <a href={`tel:${phoneNumber}`} className="text-sm hover:underline">
       {phoneNumber}
     </a>
-  </div>
+  </Row>
 );
