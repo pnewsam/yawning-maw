@@ -8,8 +8,8 @@ type Props = { restaurant: Restaurant };
 
 export const RestaurantDetails = ({ restaurant }: Props) => {
   return (
-    <div className="CONTENT pt-6 pb-20">
-      <div className="hidden md:block">
+    <div>
+      <div className="CONTENT pt-6 pb-20 hidden md:block">
         <Desktop restaurant={restaurant} />
       </div>
       <div className="md:hidden">
