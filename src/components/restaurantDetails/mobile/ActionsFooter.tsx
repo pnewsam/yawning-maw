@@ -1,21 +1,20 @@
-import { ExternalLink } from "lucide-react";
 import { Restaurant } from "@/models";
+import { Call, ViewOnGoogle, CopyAddress } from "./ActionsFooter.sub";
 
 type Props = {
   restaurant: Restaurant;
 };
 
 export const ActionsFooter = ({ restaurant }: Props) => {
+  const { address, googleUrl, phoneNumber } = restaurant;
+  const firstLineOfAddress = address.split(",")[0];
+
   return (
-    <div className="w-full h-[80px] fixed bottom-0 left-0 right-0 sm:hidden border-t border-gray-300">
-      <div className="flex flex-col items-center justify-center w-full h-full bg-white">
-        <a
-          href={restaurant.googleUrl}
-          className="text-sm text-stone-700 text-end inline-flex justify-end gap-2 items-center hover:underline"
-        >
-          <span>View on Google Maps</span>
-          <ExternalLink className="w-3 h-3"></ExternalLink>
-        </a>
+    <div className="w-full h-[80px] fixed bottom-0 left-0 right-0 border-t-2 bg-white border-gray-800 shadow-lg px-4">
+      <div className="flex items-center justify-center gap-4 w-full h-full">
+        <Call phoneNumber={phoneNumber} />
+        <ViewOnGoogle googleUrl={googleUrl} />
+        <CopyAddress address={firstLineOfAddress} />
       </div>
     </div>
   );
