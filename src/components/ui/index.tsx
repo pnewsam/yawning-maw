@@ -7,6 +7,7 @@ export * from "./input";
 export * from "./popover";
 export * from "./select";
 export * from "./separator";
+export * from "./skeleton";
 export * from "./toast";
 export * from "./toaster";
 export * from "./tooltip";

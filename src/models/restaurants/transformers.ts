@@ -1,6 +1,6 @@
 import { mockRestaurant } from ".";
 
-type RestaurantRecord = typeof mockRestaurant;
+export type RestaurantRecord = typeof mockRestaurant;
 
 export const RestaurantTransformer = (restaurant: RestaurantRecord) => ({
   id: restaurant.id,

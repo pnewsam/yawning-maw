@@ -11,8 +11,8 @@ export const Header = ({ restaurant }: Props) => {
   const { name, neighborhood, address } = restaurant;
   return (
     <div className="flex justify-between items-end mt-4 mb-4">
-      <div className="">
-        <h1 className="text-4xl text-stone-600 font-semibold font-display mb-1">
+      <div>
+        <h1 className="text-4xl text-stone-700 font-semibold font-display mb-1">
           {name}
         </h1>
         <h2 className="text-sm text-stone-500">

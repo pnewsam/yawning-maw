@@ -1,6 +1,7 @@
 "use client";
 
 import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
 import { useToast } from "@/components/ui/use-toast";
 import { Toaster } from "@/components/ui/toaster";
 import clsx from "clsx";
@@ -24,6 +25,7 @@ export const BaseAppLayout = ({ children, className }: Props) => {
       <Navbar />
       {children}
       <Toaster />
+      <Footer />
     </div>
   );
 };
