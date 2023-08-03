@@ -9,3 +9,7 @@
 ### NextJS
 
 - ` "use client"`` should not be used in  `app`directory. The`app`directory should be reserved only for Server Components.`"use client"`should be used only in`components` directory.
+
+## References
+
+- How to set up Next.js with Prisma and PlanetScale: https://planetscale.com/blog/how-to-setup-next-js-with-prisma-and-planetscale
