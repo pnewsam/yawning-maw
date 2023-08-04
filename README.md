@@ -10,6 +10,6 @@
 
 - ` "use client"`` should not be used in  `app`directory. The`app`directory should be reserved only for Server Components.`"use client"`should be used only in`components` directory.
 
-## References
+## package.json
 
-- How to set up Next.js with Prisma and PlanetScale: https://planetscale.com/blog/how-to-setup-next-js-with-prisma-and-planetscale
+- The `encoding` package under devDependencies was added only due to a compilation warning detailed here: https://github.com/supabase/supabase-js/issues/612 -- if the issue is ever resolved the package may be removeable.

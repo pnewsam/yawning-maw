@@ -1,5 +1,3 @@
-import { Restaurant } from ".";
-
 const google = {
   address_components: [
     {
@@ -453,10 +451,8 @@ const google = {
   wheelchair_accessible_entrance: true,
 };
 
-export const mockRestaurant = {
+export const mockRestaurantRecord = {
   id: 1,
   name: "JoJo's Fantastic Pancakes",
-  slug: "jojos-fantastic-pancakes",
-  genres: ["American", "Breakfast", "Brunch"],
-  google,
+  data: {},
 };
