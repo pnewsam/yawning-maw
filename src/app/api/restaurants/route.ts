@@ -1,13 +1,16 @@
-import { PrismaClient } from "@prisma/client";
 import { NextRequest, NextResponse } from "next/server";
-
-const prisma = new PrismaClient();
+import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs";
+import { cookies } from "next/headers";
 
 export async function GET() {
-  try {
-    const restaurants = await prisma.restaurant.findMany();
+  const supabase = createRouteHandlerClient({ cookies });
+
+  const { data: restaurants = [], error } = await supabase
+    .from("restaurants")
+    .select();
+  if (restaurants) {
     return NextResponse.json(restaurants);
-  } catch (error) {
+  } else {
     console.error(error);
     return NextResponse.json(
       { error: "Error getting restaurants" },
@@ -17,15 +20,17 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
-  try {
-    const { name } = await request.json();
-    const restaurant = await prisma.restaurant.create({
-      data: {
-        name,
-      },
-    });
+  const supabase = createRouteHandlerClient({ cookies });
+
+  const { name } = await request.json();
+  const { data: restaurant, error } = await supabase
+    .from("restaurants")
+    .insert({ name })
+    .select();
+
+  if (restaurant) {
     return NextResponse.json(restaurant, { status: 201 });
-  } catch (error) {
+  } else {
     console.error(error);
     return NextResponse.json(
       { error: "Error creating restaurant" },

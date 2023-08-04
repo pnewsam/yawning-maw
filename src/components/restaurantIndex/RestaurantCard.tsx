@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { RestaurantRecord, mockRestaurant } from "@/models";
+import { Restaurant } from "@/models";
 import interior from "@/assets/images/interior.jpg";
-import { RestaurantTransformer } from "@/models/restaurants/transformers";
 import {
   PhotoLinkButton,
   Name,
@@ -10,11 +9,11 @@ import {
 } from "./RestaurantCard.sub";
 
 type Props = {
-  restaurant?: RestaurantRecord;
+  restaurant: Restaurant;
 };
 
-export const RestaurantCard = ({ restaurant = mockRestaurant }: Props) => {
-  const { name, neighborhood, genres } = RestaurantTransformer(restaurant);
+export const RestaurantCard = ({ restaurant }: Props) => {
+  const { name, neighborhood, genres } = restaurant;
   return (
     <div>
       <PhotoLinkButton href={`/restaurants/${restaurant.slug}`}>

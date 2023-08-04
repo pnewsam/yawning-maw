@@ -1,27 +1,23 @@
 const links = [
   {
     title: "The Best Restaurants in San Diego",
-    url: "/",
+    url: "/best-restaurants-in-san-diego",
   },
   {
-    title: "The Best Restaurants in San Diego",
-    url: "/",
+    title: "The Best Restaurants in Orange County",
+    url: "/best-restaurants-in-orange-county",
   },
   {
-    title: "The Best Restaurants in San Diego",
-    url: "/",
+    title: "The Best Restaurants in Phoenix",
+    url: "/best-restaurants-in-phoenix",
   },
   {
-    title: "The Best Restaurants in San Diego",
-    url: "/",
+    title: "The Best Restaurants in Tucson",
+    url: "/best-restaurants-in-tucson",
   },
   {
-    title: "The Best Restaurants in San Diego",
-    url: "/",
-  },
-  {
-    title: "The Best Restaurants in San Diego",
-    url: "/",
+    title: "The Best Restaurants in Las Vegas",
+    url: "/best-restaurants-in-las-vegas",
   },
 ];
 
