@@ -1,15 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { cache } from "react";
 import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 
-const createRouteHandlerSupabaseClient = cache(() => {
-  const cookieStore = cookies();
-  return createRouteHandlerClient({ cookies: () => cookieStore });
-});
-
 export async function GET() {
-  const supabase = createRouteHandlerSupabaseClient();
+  const supabase = createRouteHandlerClient({ cookies });
 
   const { data: restaurants = [], error } = await supabase
     .from("restaurants")
@@ -26,7 +20,7 @@ export async function GET() {
 }
 
 export async function POST(request: NextRequest) {
-  const supabase = createRouteHandlerSupabaseClient();
+  const supabase = createRouteHandlerClient({ cookies });
 
   const { name } = await request.json();
   const { data: restaurant, error } = await supabase
