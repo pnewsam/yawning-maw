@@ -3,7 +3,7 @@ import { cache } from "react";
 import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
 
-export const createRouteHandlerSupabaseClient = cache(() => {
+const createRouteHandlerSupabaseClient = cache(() => {
   const cookieStore = cookies();
   return createRouteHandlerClient({ cookies: () => cookieStore });
 });
