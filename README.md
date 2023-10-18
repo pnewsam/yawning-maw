@@ -1,5 +1,17 @@
 # Yawning Maw
 
+## Overview
+
+The goal for this application is to serve as a repository for great local restaurants. I've been building it out as a way to explore some tools, especially React Server Components. Here's the current stack:
+
+- React with Server Components
+- Typescript
+- Tailwind
+- shadcn/ui (Components)
+- Supabase (Database)
+
+The UI is heavily inspired by AirBnb's wonderful designs.
+
 ## Code Style
 
 ### Code Organization
