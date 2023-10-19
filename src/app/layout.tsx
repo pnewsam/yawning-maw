@@ -1,9 +1,7 @@
 import { AppLayout } from "@/components/AppLayout";
 import "./globals.css";
 import type { Metadata } from "next";
-import { cookies } from "next/headers";
 import { inter, prompt } from "./fonts";
-import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,21 +16,15 @@ export const metadata: Metadata = {
  */
 export const dynamic = "force-dynamic";
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const supabase = createServerComponentClient({ cookies });
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
   return (
     <html lang="en" className={`${inter.className}, ${prompt.variable}`}>
       <body>
-        <AppLayout user={user}>{children}</AppLayout>
+        <AppLayout>{children}</AppLayout>
       </body>
     </html>
   );

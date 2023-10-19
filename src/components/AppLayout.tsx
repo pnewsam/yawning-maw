@@ -9,12 +9,11 @@ import clsx from "clsx";
 type Props = {
   children: React.ReactNode;
   className?: string;
-  user: any;
 };
 
 export let showToast: any = undefined;
 
-export const BaseAppLayout = ({ children, className, user }: Props) => {
+export const BaseAppLayout = ({ children, className }: Props) => {
   const { toast } = useToast();
 
   if (!showToast) {
@@ -23,7 +22,7 @@ export const BaseAppLayout = ({ children, className, user }: Props) => {
 
   return (
     <div className={clsx("min-h-full", className)}>
-      <Navbar user={user} />
+      <Navbar />
       {children}
       <Toaster />
       <Footer />
@@ -31,8 +30,6 @@ export const BaseAppLayout = ({ children, className, user }: Props) => {
   );
 };
 
-export const AppLayout = ({ className, children, user }: Props) => (
-  <BaseAppLayout className={className} user={user}>
-    {children}
-  </BaseAppLayout>
+export const AppLayout = ({ className, children }: Props) => (
+  <BaseAppLayout className={className}>{children}</BaseAppLayout>
 );
