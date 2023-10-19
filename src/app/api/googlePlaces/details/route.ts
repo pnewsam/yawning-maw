@@ -7,10 +7,7 @@ type Data = {
   result: any;
 };
 
-export default async function handler(
-  req: NextRequest,
-  res: NextResponse<Data>
-) {
+export async function GET(req: NextRequest, res: NextResponse<Data>) {
   const { searchParams } = new URL(req.url);
   const placeId = searchParams.get("placeId");
   console.log(placeId, "placeId");
