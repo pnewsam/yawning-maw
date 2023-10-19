@@ -1,0 +1,225 @@
+{
+  "predictions": [
+    {
+      "description": "Nishiki Ramen, Armour Street, San Diego, CA, USA",
+      "matched_substrings": [
+        {
+          "length": 7,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJ6Zfzgur_24ARKLd4gwahJvA",
+      "reference": "ChIJ6Zfzgur_24ARKLd4gwahJvA",
+      "structured_formatting": {
+        "main_text": "Nishiki Ramen",
+        "main_text_matched_substrings": [
+          {
+            "length": 7,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "Armour Street, San Diego, CA, USA"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Nishiki Ramen"
+        },
+        {
+          "offset": 15,
+          "value": "Armour Street"
+        },
+        {
+          "offset": 30,
+          "value": "San Diego"
+        },
+        {
+          "offset": 41,
+          "value": "CA"
+        },
+        {
+          "offset": 45,
+          "value": "USA"
+        }
+      ],
+      "types": ["restaurant", "food", "point_of_interest", "establishment"]
+    },
+    {
+      "description": "Nishiki Ramen, University Avenue, San Diego, CA, USA",
+      "matched_substrings": [
+        {
+          "length": 7,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJqbE_KchV2YARTO4Oa7cLQQU",
+      "reference": "ChIJqbE_KchV2YARTO4Oa7cLQQU",
+      "structured_formatting": {
+        "main_text": "Nishiki Ramen",
+        "main_text_matched_substrings": [
+          {
+            "length": 7,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "University Avenue, San Diego, CA, USA"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Nishiki Ramen"
+        },
+        {
+          "offset": 15,
+          "value": "University Avenue"
+        },
+        {
+          "offset": 34,
+          "value": "San Diego"
+        },
+        {
+          "offset": 45,
+          "value": "CA"
+        },
+        {
+          "offset": 49,
+          "value": "USA"
+        }
+      ],
+      "types": ["restaurant", "food", "point_of_interest", "establishment"]
+    },
+    {
+      "description": "Nishiki Ramen - Mira Mesa, Mira Mesa Boulevard, San Diego, CA, USA",
+      "matched_substrings": [
+        {
+          "length": 7,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJaS9jIxD524ARJlz6IalJ4h8",
+      "reference": "ChIJaS9jIxD524ARJlz6IalJ4h8",
+      "structured_formatting": {
+        "main_text": "Nishiki Ramen - Mira Mesa",
+        "main_text_matched_substrings": [
+          {
+            "length": 7,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "Mira Mesa Boulevard, San Diego, CA, USA"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Nishiki Ramen - Mira Mesa"
+        },
+        {
+          "offset": 27,
+          "value": "Mira Mesa Boulevard"
+        },
+        {
+          "offset": 48,
+          "value": "San Diego"
+        },
+        {
+          "offset": 59,
+          "value": "CA"
+        },
+        {
+          "offset": 63,
+          "value": "USA"
+        }
+      ],
+      "types": ["restaurant", "food", "point_of_interest", "establishment"]
+    },
+    {
+      "description": "Nishiki Ramen & Sushi, Main Street, Gaithersburg, MD, USA",
+      "matched_substrings": [
+        {
+          "length": 7,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJDRVcamsttokRJrY_JwkrjoY",
+      "reference": "ChIJDRVcamsttokRJrY_JwkrjoY",
+      "structured_formatting": {
+        "main_text": "Nishiki Ramen & Sushi",
+        "main_text_matched_substrings": [
+          {
+            "length": 7,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "Main Street, Gaithersburg, MD, USA"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Nishiki Ramen & Sushi"
+        },
+        {
+          "offset": 23,
+          "value": "Main Street"
+        },
+        {
+          "offset": 36,
+          "value": "Gaithersburg"
+        },
+        {
+          "offset": 50,
+          "value": "MD"
+        },
+        {
+          "offset": 54,
+          "value": "USA"
+        }
+      ],
+      "types": ["restaurant", "food", "point_of_interest", "establishment"]
+    },
+    {
+      "description": "Nishiki Hibachi & Sushi Restaurant, Independence Plaza, Selden, NY, USA",
+      "matched_substrings": [
+        {
+          "length": 7,
+          "offset": 0
+        }
+      ],
+      "place_id": "ChIJdUbCpRpH6IkRmqlRPatEXiI",
+      "reference": "ChIJdUbCpRpH6IkRmqlRPatEXiI",
+      "structured_formatting": {
+        "main_text": "Nishiki Hibachi & Sushi Restaurant",
+        "main_text_matched_substrings": [
+          {
+            "length": 7,
+            "offset": 0
+          }
+        ],
+        "secondary_text": "Independence Plaza, Selden, NY, USA"
+      },
+      "terms": [
+        {
+          "offset": 0,
+          "value": "Nishiki Hibachi & Sushi Restaurant"
+        },
+        {
+          "offset": 36,
+          "value": "Independence Plaza"
+        },
+        {
+          "offset": 56,
+          "value": "Selden"
+        },
+        {
+          "offset": 64,
+          "value": "NY"
+        },
+        {
+          "offset": 68,
+          "value": "USA"
+        }
+      ],
+      "types": ["restaurant", "food", "point_of_interest", "establishment"]
+    }
+  ],
+  "status": "OK"
+}
