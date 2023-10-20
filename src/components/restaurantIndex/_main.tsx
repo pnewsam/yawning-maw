@@ -1,7 +1,7 @@
 "use client";
 
-import { RestaurantCard } from "@/components/restaurantIndex/RestaurantCard";
-import { GridLayout } from "@/components/restaurantIndex/GridLayout";
+import { RestaurantListCard } from "@/components/restaurantIndex/RestaurantListCard";
+import { ListLayout } from "@/components/restaurantIndex/ListLayout";
 import { Restaurant } from "@/models";
 
 type Props = {
@@ -11,11 +11,17 @@ type Props = {
 export const RestaurantIndex = ({ restaurants }: Props) => {
   return (
     <main className="CONTENT py-8">
-      <GridLayout>
-        {restaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant.id} restaurant={restaurant} />
+      <ListLayout>
+        {restaurants.map((restaurant, idx) => (
+          <RestaurantListCard
+            key={restaurant.id}
+            restaurant={restaurant}
+            rank={idx + 1}
+            first={idx === 0}
+            last={idx === restaurants.length - 1}
+          />
         ))}
-      </GridLayout>
+      </ListLayout>
     </main>
   );
 };

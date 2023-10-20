@@ -1,6 +1,10 @@
 export type RestaurantRecord = {
   id: number;
   name: string;
+  neighborhood: string;
+  address: string;
+  phoneNumber: string;
+  website: string;
   data: any;
 };
 

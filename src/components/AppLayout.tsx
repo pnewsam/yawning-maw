@@ -21,7 +21,7 @@ export const BaseAppLayout = ({ children, className }: Props) => {
   }
 
   return (
-    <div className={clsx("min-h-full", className)}>
+    <div className={clsx("min-h-full bg-stone-50", className)}>
       <Navbar />
       {children}
       <Toaster />
